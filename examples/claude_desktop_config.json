@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "erp-bridge": {
+      "command": "python",
+      "args": ["-m", "mcp_erp_bridge"],
+      "env": {
+        "ERP_USERNAME": "your.email@company.com",
+        "ERP_PASSWORD": "REPLACE_ME",
+        "ERP_BASE_URL": "https://erp.example.com"
+      }
+    }
+  }
+}

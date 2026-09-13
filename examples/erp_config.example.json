@@ -1,0 +1,33 @@
+{
+  "endpoints": {
+    "login": "/login",
+    "work_order": "/wo/{wo_number}",
+    "work_order_search": "/wo/search",
+    "work_order_note": "/wo/note"
+  },
+  "selectors": {
+    "csrf_input": "input[name=\"csrf_token\"]",
+    "csrf_form_field": "csrf_token",
+    "username_field": "username",
+    "password_field": "password",
+    "session_cookie": "session",
+    "detail_fields": {
+      "status": "#wo-status",
+      "technician": "#wo-technician",
+      "scheduled": "#wo-scheduled",
+      "nte": "#wo-nte",
+      "customer": "#wo-customer",
+      "location": "#wo-location",
+      "description": "#wo-description",
+      "parent_wo": "#wo-parent"
+    },
+    "list_rows": "table.wo-list tbody tr",
+    "list_number_cell": "td.wo-num",
+    "list_status_cell": "td.wo-status",
+    "pending_statuses": ["PENDING DISPATCH", "IN PROGRESS"],
+    "note_field_prefix": "closeout_",
+    "note_type_field": "note_type",
+    "note_type_value": "CLOSEOUT",
+    "note_wo_field": "wo_number"
+  }
+}
